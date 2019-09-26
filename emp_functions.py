@@ -11,15 +11,15 @@ class Employee:
         self.emp_time = emp_time
 
     def print_name(self):
-        print("%s, %s" % (self.last, self.first))
+        return("%s, %s" % (self.last, self.first))
 
     def length_of_employment(self):
         if self.emp_time == 1:
-            print("%s %s has worked here for %d year!" % (self.first,
+            return("%s %s has worked here for %d year!" % (self.first,
                                                           self.last,
                                                           self.emp_time))
         else:
-            print("%s %s has worked here for %d years!" % (self.first,
+            return("%s %s has worked here for %d years!" % (self.first,
                                                            self.last,
                                                            self.emp_time))
 
@@ -27,4 +27,4 @@ class Employee:
         self.emp_time += 1
 
     def close(self):
-        pass
+        return("Employee instance has been closed")
